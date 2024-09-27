@@ -17,13 +17,15 @@ public class Square extends Shape {
         return sideLength;
     }
 
-    // Calculate Area
-    public double calculateArea() {
-        return sideLength * sideLength;
+     // Override method for Area
+    @Override
+    public double getArea() {
+        return sideLength * sideLength; 
     }
 
-    // Calucalate the perimeter
-    public double calculatePerimeter() {
+    // Override method for Perimeter
+    @Override
+    public double getPerimeter() {
         return 4 * sideLength;
     }
 }
